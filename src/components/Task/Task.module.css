@@ -1,0 +1,32 @@
+.task {
+  height: 60px;
+  border-radius: 5px;
+  box-shadow: 0 0 2px 0 #ccc;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+.task:first-child {
+  margin-top: 10px;
+}
+.task:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.task__deleteBtn {
+  background-color: transparent;
+  padding: 5px;
+  border-radius: 50%;
+  transition: 0.2s;
+  cursor: pointer;
+  width: 36px;
+  height: 36px;
+}
+.task__deleteBtn:active {
+  background-color: #ccc;
+}
+.task__deleteBtn:active svg path {
+  fill: crimson;
+}
