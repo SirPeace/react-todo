@@ -4,10 +4,20 @@
   height: 60px;
   display: flex;
   align-items: center;
-  padding: 0 10px;
 }
 
-.Header__title {
+.container {
+  width: 100%;
+  padding: 0 10px;
+}
+@media (min-width: 800px) {
+  .container {
+    margin: auto;
+    max-width: 1000px;
+  }
+}
+
+.title {
   color: #fff;
   font-size: 24px;
 }
